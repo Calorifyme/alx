@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="black">
+    <title>AlexVrg.org</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <style>
+
+    </style>
+
+
+</head>    
+<body>
+
+<div id="universe">
+  <div class="splash"> 
+    <h1><img class="fade-in" src="https://img.icons8.com/nolan/200/handshake.png"/></h1>
+  </div>
+
+   <header class="primary-header">
+       <div style="display: block;">
+       <a href="#" class="logo">Alex Varghese</a>
+       <div style="text-align: center; margin-top: 10px; padding: 5px;background-color: #00000086;border-radius: 20px;color: #ffffff8b;" id="tagline" class="tagline">Scroll down to explore more</div style="text-align: center;">
+       </div>
+   
+       <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"></span></button> 
+ 
+   <nav>
+   <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+<li class="active">
+  <a href="index.html"> 
+    <span aria-hidden="true">00</span>Home
+  </a>
+<li>
+   <a href="#sec">
+     <span aria-hidden="true">01</span>About</a>
+ <li>
+  <a href="#Work">
+     <span aria-hidden="true">02</span>Work</a> 
+ <li>    
+  <a href="#Contact">
+     <span aria-hidden="true">03</span>Contact</a>
+ <li>    
+   <a id="phonly" href="game.html">
+      <span aria-hidden="true">04</span>Game</a>     
+</ul>
+   </nav>
+
+  </header>
+
+<section>
+    <video class="bgvideo" autoplay loop muted src="bgvideo.mp4" id="stars">
+<div style="z-index: 100;">   
+    <h2 id="text">WELCOME</h2>
+    <h5 id="text1"> To Alex</h5>
+    <a href="#" id="btn">AlexVrg.org</a>
+</div>
+</section>
+
+
+
+
+     
+
+
+<div class="sec" id="sec">  
+    <h2>About Me</h2>
+    <img src=""/>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi beatae, quia eveniet reiciendis provident veritatis, vel quasi soluta, mole
+       stiae mollitia architecto ducimus dolorum labore error neque quaerat omnis fugiat! Laudantium illo accusamus quis, cum dicta sequi, quae ut, sint beatae dolorum neque fuga eum
+       tenetur voluptatum id vero ipsa enim molestiae cupiditate porro debitis? Quam odio quasi, alias nisi deleniti officia ab maiores tempore non est quos 
+       provident beatae nulla ea modi consequuntur nemo, nobis sint, pariatur eligendi repudiandae quod? Odit eaque qui, vitae cum in fugiat cumque aliquid velit.
+       Dolorum accusamus illum consequuntur suscipit fuga neque harum soluta, fugiat aspernatur, deserunt assumenda veniam esse similique quibusdam magni rerum id, obcaecati eaque.
+    <br>
+    </p>
+   <br>
+   <br>
+   <br>
+    <h2 id="Work">My Work</h2>    
+
+
+
+<div class="collection">
+  <div class="collection-container">
+    <a class="collection-card">
+      <article>
+        <h1>Card</h1>
+        <p1>A really really really really really really long description of this card.</p1>
+      </article>
+    </a>
+    <a class="collection-card">
+      <article>
+        <h1>Card</h1>
+        <p1>A really really really really really really long description of this card.</p1>
+      </article>
+    </a>
+    <a class="collection-card">
+      <article>
+        <h1>Card</h1>
+        <p1>A really really really really really really long description of this card.</p1>
+      </article>
+    </a>
+    <a class="collection-card">
+        <article>
+          <h1>Card</h1>
+          <p1>A really really really really really really long description of this card.</p1>
+        </article>
+      </a>
+      <a class="collection-card">
+        <article>
+          <h1>Card</h1>
+          <p1>A really really really really really really long description of this card.</p1>
+        </article>
+      </a>
+      <a class="collection-card">
+        <article>
+          <h1>Card</h1>
+          <p1>A really really really really really really long description of this card.</p1>
+        </article>
+      </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let text1 = document.getElementById('text1');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        text1.style.marginRight = value * 4 + 'px';
+        text1.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+    })
+</script>
+
+<br><br>
+<h2 id="Contact">Contact Us</h2>
+<div class="container">
+
+  <div class="row">
+    
+    <div class="column">
+      <form id="submit-form" action="">
+        <label for="name">Name <a style="color: red; font-size: 12px;">(required field)</a></label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required >
+        <label for="email">Email <a style="color: red; font-size: 12px;">(required field)</a></label>
+        <input type="text" id="email" name="email" placeholder="Your Email.." required>
+        <label for="country">Instagram I'D <a style="color: rgb(83, 83, 83); font-size: 12px;">(optional)</a></label>
+        <input type="text" id="country" name="color" placeholder="Your Instagram I'D..">
+        <label for="subject">Subject <a style="color: red; font-size: 12px;">(required field)</a></label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div style="text-align: center; width: 100%; margin-top: 50px;display: none;"id="myDIV">
+  <a onclick="myFunctionhide()">
+<img onclick="EasterEgg()" src="https://img.icons8.com/color/100/000000/thanos.png">
+  </a>
+</div>
+
+</div>
+
+
+
+<script>
+  function myFunctionhide() {
+    var x = document.getElementById("universe");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+
+<script>
+  function EasterEgg() {
+    alert("You wiped my website");
+  }
+  </script>
+
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbx11wflBSqtXl446HY0kOLvwkxKVYFlJN2HsLV51ncJq-P3KvpXw0qlxwvzBdgQRttRiQ/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+    </script>
+</body>
+</html>
