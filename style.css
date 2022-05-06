@@ -72,8 +72,7 @@ header ul li a.active
     header .logo {
         display: block;
         text-align: center;
-        margin-top: 75%;
-        margin-left: -10%;
+        margin:auto;
         font-size: 3rem;
     }
     section #btn {
@@ -245,7 +244,6 @@ section img#mountains_front
     list-style: none;
     padding: 15%;
     margin: 0;
-    margin-top: -70px;
     z-index: 2000;
 }
 .primary-navigation a{
